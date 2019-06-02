@@ -290,8 +290,6 @@ fun () ->
 [%%expect {|
 Line _, characters 8-10:
 Error: Duplicated val or method "_r" (normalized to "r").
-Line _, characters 8-9:
-Error: Duplicated val or method "r".
 |}]
 ;;
 
@@ -303,8 +301,6 @@ fun () ->
 [%%expect {|
 Line _, characters 8-12:
 Error: Duplicated val or method "_r_b" (normalized to "r").
-Line _, characters 8-12:
-Error: Duplicated val or method "_r_a" (normalized to "r").
 |}]
 ;;
 
@@ -316,8 +312,6 @@ fun () ->
 [%%expect {|
 Line _, characters 16-18:
 Error: Duplicated val or method "_w" (normalized to "w").
-Line _, characters 16-17:
-Error: Duplicated val or method "w".
 |}]
 ;;
 
@@ -329,8 +323,6 @@ fun () ->
 [%%expect {|
 Line _, characters 16-20:
 Error: Duplicated val or method "_w_b" (normalized to "w").
-Line _, characters 16-20:
-Error: Duplicated val or method "_w_a" (normalized to "w").
 |}]
 ;;
 
@@ -342,8 +334,6 @@ fun () ->
 [%%expect {|
 Line _, characters 11-13:
 Error: Duplicated val or method "_m" (normalized to "m").
-Line _, characters 11-12:
-Error: Duplicated val or method "m".
 |}]
 ;;
 
@@ -355,8 +345,6 @@ fun () ->
 [%%expect {|
 Line _, characters 11-16:
 Error: Duplicated val or method "_m_bc" (normalized to "m").
-Line _, characters 11-15:
-Error: Duplicated val or method "_m_a" (normalized to "m").
 |}]
 ;;
 
